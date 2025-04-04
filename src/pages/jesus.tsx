@@ -1,4 +1,4 @@
-import { Users, Shield, Zap, BarChart, Clock, Trophy, TrendingDown, AlertTriangle, DollarSign, Ban, Target, Calendar } from 'lucide-react';
+import { Users, Shield, Zap, Clock, TrendingDown, AlertTriangle, DollarSign, Ban, Target, Calendar } from 'lucide-react';
 import { HeroSection } from '../components/HeroSection';
 import { ProblemSection } from '../components/ProblemSection';
 import { SolutionSection } from '../components/SolutionSection';
