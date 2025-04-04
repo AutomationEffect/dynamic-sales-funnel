@@ -22,13 +22,10 @@ The only requirement is having Node.js & npm installed - install with nvm
 
 🚀 **Dynamically create sales funnels using [Bolt.new](https://bolt.new), [n8n](https://n8n.io/), AI, and [Vercel](https://vercel.com/)**
 
-This project was built using **Vite** for high-performance frontend development.
-
-## 📺 YouTube Video
-Check out the full tutorial on how this works on my [YouTube channel](https://youtu.be/gIY1BdOf7oE) 
+This project was built using **Vite** for high-performance frontend development. 
 
 ## 🛠️ Tech Stack
-- **Vite** - Fast and modern frontend tooling
+
 - **Bolt.new** - AI-driven workflow automation
 - **n8n** - No-code/low-code automation
 - **Vercel** - Hosting and deployment
