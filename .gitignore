@@ -40,7 +40,10 @@ build/Release
 
 # Dependency directories
 node_modules/
-jspm_packages/
+/jspm_packages/
+/node_modules
+/.pnp
+.pnp.js
 
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
@@ -90,6 +93,7 @@ out
 # Nuxt.js build / generate output
 .nuxt
 dist
+/build
 
 # Gatsby files
 .cache/
@@ -135,3 +139,19 @@ dist
 .yarn/install-state.gz
 .pnp.*
 .qodo
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Dependencies
+node_modules
+dist
+dist-ssr
+*.local

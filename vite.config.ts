@@ -1,4 +1,3 @@
-
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { fileURLToPath } from 'url';
@@ -25,6 +24,11 @@ export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
     port: 8080,
+    allowedHosts: [
+      'localhost',
+      '212a55f3-63ad-4796-831a-8e50b9b231fd.lovableproject.com',
+      '*.lovableproject.com'
+    ]
   },
   resolve: {
     alias: {
