@@ -1,14 +1,14 @@
 
-import { Users, Shield, Zap, Clock, TrendingDown, AlertTriangle, DollarSign, Ban, Target, Calendar } from 'lucide-react';
+import { Clock, Users, Calendar } from 'lucide-react';
 import { HeroSection } from '../../components/HeroSection';
-import { ProblemSection } from '../../components/ProblemSection';
 import { SolutionSection } from '../../components/SolutionSection';
-import { MidPageCTA } from '../../components/MidPageCTA';
-import { SocialProofSection } from '../../components/SocialProofSection';
-import { FAQSection } from '../../components/FAQSection';
 import { CalendlySection } from '../../components/CalendlySection';
+import { ProblemSectionMateus } from './components/ProblemSectionMateus';
+import { MidPageCTAMateus } from './components/MidPageCTAMateus';
 import { MarketChallengesSectionMateus } from './components/MarketChallengesSectionMateus';
 import { OperationalIssuesSectionMateus } from './components/OperationalIssuesSectionMateus';
+import { SocialProofSectionMateus } from './components/SocialProofSectionMateus';
+import { FAQSectionMateus } from './components/FAQSectionMateus';
 
 export default function MateusPage() {
   const scrollToCalendly = () => {
