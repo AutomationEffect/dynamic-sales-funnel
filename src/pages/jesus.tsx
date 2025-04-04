@@ -26,9 +26,14 @@ export default function HomePage() {
         badgeText="As featured in Fortune 500"
         primaryButtonText="Get Started"
         onButtonClick={scrollToCalendly}
-        trustText={{main: "Trusted by Leading Corporations", sub: "Delivering measurable results through dance-driven team building"}}stats={{ value: "100%", label: "Average ROI Increase"}}
-
-
+        trustText={{
+          main: "Trusted by Leading Corporations",
+          sub: "Delivering measurable results through dance-driven team building"
+        }}
+        stats={{
+          value: "100%",
+          label: "Average ROI Increase"
+        }}
         heroImage={{
           src: "https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=800&q=80",
           alt: "Business Growth"
