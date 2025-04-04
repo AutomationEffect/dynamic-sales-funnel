@@ -5,7 +5,8 @@ import { fileURLToPath } from 'url';
 import { dirname, resolve } from 'path';
 import { componentTagger } from 'lovable-tagger';
 
-const __filename = fileURLToPath(import.meta.url);
+// Fix for the ImportMeta type issue
+const __filename = fileURLToPath(import.meta.url as unknown as string);
 const __dirname = dirname(__filename);
 
 export default defineConfig(({ mode }) => ({
