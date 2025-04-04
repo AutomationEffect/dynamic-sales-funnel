@@ -14,7 +14,7 @@ export default defineConfig({
     }
   },
   server: {
-    historyApiFallback: true, // Ensures correct routing in development
+    // Remove historyApiFallback as it's not a valid property in ServerOptions
     port: 8080
   }
 });

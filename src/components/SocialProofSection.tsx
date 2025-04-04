@@ -1,4 +1,3 @@
-import React from 'react';
 import { MessageCircle, Quote } from 'lucide-react';
 
 interface Testimonial {
@@ -9,7 +8,6 @@ interface Testimonial {
     src: string;
     alt: string;
   };
-
 }
 
 interface SocialProofSectionProps {

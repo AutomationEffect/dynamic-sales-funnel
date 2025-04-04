@@ -1,16 +1,21 @@
-import React from 'react';
+
 import { Target, Users, BarChart } from 'lucide-react';
 
 interface SolutionSectionProps {
   title: string;
+  subtitle?: string; // Add optional subtitle prop
   solutions: string[];
   image: {
     src: string;
     alt: string;
   };
+  stats?: {  // Add optional stats prop
+    value: string;
+    label: string;
+  };
 }
 
-export function SolutionSection({ title, solutions, image }: SolutionSectionProps) {
+export function SolutionSection({ title, subtitle, solutions, image, stats }: SolutionSectionProps) {
   const solutionIcons = [
     { icon: Target, text: solutions[0] },
     { icon: Users, text: solutions[1] },
@@ -30,6 +35,7 @@ export function SolutionSection({ title, solutions, image }: SolutionSectionProp
           <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
             {title}
           </h2>
+          {subtitle && <p className="text-xl text-gray-600 mb-6">{subtitle}</p>}
         </div>
 
         <div className="grid lg:grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
@@ -63,11 +69,13 @@ export function SolutionSection({ title, solutions, image }: SolutionSectionProp
               {/* Overlay gradient */}
               <div className="absolute inset-0 bg-gradient-to-tr from-blue-600/20 to-transparent rounded-2xl" />
               
-              {/* Stats overlay */}
-              <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-xl">
-                <div className="text-blue-600 font-bold text-2xl">95%</div>
-                <div className="text-gray-600 text-sm">Success Rate</div>
-              </div>
+              {/* Stats overlay - conditionally rendered */}
+              {stats && (
+                <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-xl">
+                  <div className="text-blue-600 font-bold text-2xl">{stats.value}</div>
+                  <div className="text-gray-600 text-sm">{stats.label}</div>
+                </div>
+              )}
             </div>
           </div>
         </div>

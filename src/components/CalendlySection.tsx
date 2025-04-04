@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { Calendar, Clock, Users } from 'lucide-react';
 
 interface Feature {
@@ -41,6 +41,7 @@ export function CalendlySection({
   }, []);
 
   return (
+    
     <section id={id} className="py-24 bg-gradient-to-br from-blue-600 to-blue-800 relative overflow-hidden">
       {/* Background decoration */}
       <div className={`absolute inset-0 bg-[url('${backgroundImage}')] opacity-5 bg-cover bg-center mix-blend-overlay`} />

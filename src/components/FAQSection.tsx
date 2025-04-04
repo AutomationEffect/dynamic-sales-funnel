@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+
+import { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
 
 interface FAQ {
@@ -40,7 +41,7 @@ export function FAQSection({
     <section className="py-24 relative overflow-hidden">
       {/* Background */}
       <div className={`absolute inset-0 bg-[url('${backgroundImage}')] opacity-5 bg-cover bg-center`} />
-      <div className="absolute inset-0 bg-gradient-to-br from-gray-50 to-white" />
+      <div className={`absolute inset-0 bg-gradient-to-br from-${gradientColors.from}/10 to-${gradientColors.to}/10`} />
       
       {/* Floating decorative elements */}
       <div className={`absolute top-20 left-10 w-72 h-72 ${decorativeColors.first} rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob`} />

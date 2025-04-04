@@ -1,8 +1,9 @@
-import React from 'react';
-import { DivideIcon as LucideIcon } from 'lucide-react';
+
+import { DivideIcon } from 'lucide-react';
+import type { LucideIcon } from 'lucide-react';
 
 interface Challenge {
-  icon: LucideIcon;
+  icon: typeof DivideIcon;  // Fix: use typeof to reference the component type
   title: string;
   description: string;
   stats?: {
