@@ -1,3 +1,4 @@
+
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
@@ -13,6 +14,7 @@ export default defineConfig({
     }
   },
   server: {
-    historyApiFallback: true // Ensures correct routing in development
+    historyApiFallback: true, // Ensures correct routing in development
+    port: 8080
   }
 });
